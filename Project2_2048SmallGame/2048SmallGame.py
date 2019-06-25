@@ -40,10 +40,10 @@ def invert(field):
 # 创建棋盘
 # 初始化棋盘的参数，可以指定棋盘的高和宽以及游戏胜利条件，默认是最经典的4x4~2018.
 class GameField(object):
-    def __init__(self, height = 4, width = 4, win = 2048):
+    def __init__(self, height = 4, width = 4, win = 2018):
         self.height = height     # 高
         self.width = width       # 宽
-        self.win_value = 2048    # 过关分数
+        self.win_value = win    # 过关分数
         self.score = 0           # 当前分数
         self.highscore = 0       # 最高分
         self.reset()             # 棋盘重置
