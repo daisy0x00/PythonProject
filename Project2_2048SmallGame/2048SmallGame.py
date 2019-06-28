@@ -5,7 +5,7 @@ import curses
 from random import randrange, choice
 from collections import defaultdict
 
-# Part I 主逻辑
+
 # 1.用户行为
 # 所有的有效输入都可以转换为“上， 下， 左， 右， 游戏重置， 退出”这六种行为，用actions表示
 actions = ['Up', 'Left', 'Down', 'Right', 'Restart', 'Exit']
@@ -238,7 +238,7 @@ def main(stdscr):
 
     curses.use_default_colors()
     # 设置终结状态最大数值为32
-    game_field = GameField(win=32)
+    game_field = GameField(win=128)
 
     state = 'Init'
 
